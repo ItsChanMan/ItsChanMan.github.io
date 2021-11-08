@@ -2,6 +2,10 @@ var img;
 var img2;
 var img3;
 var img4;
+var img5;
+var img6;
+var img7;
+var img8;
 var initials ='cc'; // your initials
 var choice = '1'; // starting choice, so it is not empty
 var screenbg = 240; // off white background
@@ -13,6 +17,10 @@ function preload() {
  img2 = loadImage('rapper.png');
  img3 = loadImage('thecrowd.png');
  img4 = loadImage('strobelights.png');
+ img5 = loadImage('smoke.png');
+ img6 = loadImage('flame.png');
+ img7 = loadImage('cactus.png');
+ img8 = loadImage('gate.png');
 // you can link to an image on your github account
 //img = loadImage('https://dma-git.github.io/images/74.png');
 }
@@ -38,64 +46,60 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
   // just make sure each key option has the a stroke or fill and then what type of 
   // graphic function
 
- if (toolChoice == '1' ) {  // first tool
+ if (toolChoice == 'l' ) {  // first tool
    
     stroke(01);
-    line(mouseX, mouseY, pmouseX, pmouseY);
+   line(mouseX, mouseY, pmouseX, pmouseY);
     
-  } else if (toolChoice == '2') { // second tool
+  } else if (toolChoice == 'm') { // second tool
 
     stroke(20);
     line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '3') { // third tool
+  } else if (toolChoice == 'p') { // third tool
 
     stroke(300, 100, 0, 80);
     line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '4') {
+  } else if (toolChoice == 'o') {
 
-    stroke(0, 0, 255);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (key == '5') { // this tool calls a function
-    stroke(0, 0, 255);
-    testbox(20, 20, 200);
-    testbox(200, 20, 20);
-    
- // make testbox do something!
+//    stroke(0, 0, 255);
  //   line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '6') {
-
-    stroke(200);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  } else if (toolChoice == '7') {
-
-    fill(100, 200, 100);
-    rect(mouseX, mouseY, 20, 20);
-  } else if (toolChoice == '8') {
-
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 20, 20);
-  } else if (toolChoice == '9') {
-
-    fill(300, 100, 0, 80);
-    rect(mouseX, mouseY, 40, 40);
-  } else if (toolChoice == '0') {
-    stroke(0, 0);
+//  } else if (key == '5') { // this tool calls a function
+//    stroke(0, 0, 255);
+ //   testbox(20, 20, 200);
+ //   testbox(200, 20, 20);
+    
     fill(random(255), random(255), random(255), random(255));
     rect(mouseX, mouseY, 200, 150);
-  } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
+  } else if (toolChoice == 'g' || toolChoice == '1') { // g places the image we pre-loaded
     image(img, mouseX-400, mouseY-200, 700, 400);
     
   }
-  else if (toolChoice == 'g' || toolChoice == 'v') { // g places the image we pre-loaded
+  else if (toolChoice == 'g' || toolChoice == '2') { // g places the image we pre-loaded
     image(img2, mouseX-50, mouseY-50, 100, 100);
     
   }
-    else if (toolChoice == 'g' || toolChoice == 'r') { // g places the image we pre-loaded
+    else if (toolChoice == 'g' || toolChoice == '3') { // g places the image we pre-loaded
     image(img3, mouseX-50, mouseY-50, 400, 200);
     
   }
-     else if (toolChoice == 'g' || toolChoice == 'y') { // g places the image we pre-loaded
-    image(img4, mouseX-50, mouseY-50, 400, 200);
+     else if (toolChoice == 'g' || toolChoice == '4') { // g places the image we pre-loaded
+    image(img4, mouseX-200, mouseY-0, 400, 200);
+    
+  }
+  else if (toolChoice == 'g' || toolChoice == '5') { // g places the image we pre-loaded
+    image(img5, mouseX-200, mouseY-0, 100, 200);
+    
+  }
+   else if (toolChoice == 'g' || toolChoice == '6') { // g places the image we pre-loaded
+    image(img6, mouseX-20, mouseY-200, 100, 200);
+    
+  }
+   else if (toolChoice == 'g' || toolChoice == '7') { // g places the image we pre-loaded
+    image(img7, mouseX-0, mouseY-0, 200, 200);
+    
+  }
+     else if (toolChoice == 'g' || toolChoice == '8') { // g places the image we pre-loaded
+    image(img8, mouseX-0, mouseY-0, 200, 100);
     
   }
  }
