@@ -20,10 +20,10 @@ function setup() {
 } // end setup
 
 function preload (){
-  img1 = loadImage('forest.jpeg');
-  img2 = loadImage('fly.png');
-  img3 = loadImage('desert.jpeg');
-  img4 = loadImage('house.jpeg');
+  img1 = loadImage('https://ItsChanMan.github.io/gameint/forest.jpeg');
+  img2 = loadImage('https://ItsChanMan.github.io/gameint/fly.png');
+  img3 = loadImage('https://ItsChanMan.github.io/gameint/desert.jpeg');
+  img4 = loadImage('https://ItsChanMan.github.io/gameint/house.jpeg');
   
 }
   
